@@ -18,16 +18,16 @@ public class Problema5_promedios {
         String nombre, estado;
         double promedio;
         int cont = 1;
-        while (cont<=4) {
-            System.out.print("dame nombre y promedio del estudiante"+cont+": ");
-            nombre=tcl.next();
+        while (cont <= 4) {
+            System.out.print("dame nombre y promedio del estudiante" + cont + ": ");
+            nombre = tcl.next();
             promedio = tcl.nextDouble();
-            if (promedio>=7){
-                estado="Aprobado";
-            }else {
-                estado="Reprobado";
+            if (promedio >= 7) {
+                estado = "Aprobado";
+            } else {
+                estado = "Reprobado";
             }
-            System.out.printf("|\t%s\t|\t%s\t\t|\t%s\t         |%n", "nombre", "promedio","estado");
+            System.out.printf("|\t%s\t|\t%s\t\t|\t%s\t         |%n", "nombre", "promedio", "estado");
             System.out.printf("|\t%s\t|\t%.2f\t         \t|\t%s\t |%n", nombre, promedio, estado);
             cont++;
         }

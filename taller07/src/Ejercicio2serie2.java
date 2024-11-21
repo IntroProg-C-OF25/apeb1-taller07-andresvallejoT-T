@@ -16,16 +16,16 @@ public class Ejercicio2serie2 {
         int cont, lim, cont2;
         System.out.print("Ingresa el limite: ");
         lim = tcl.nextInt();
-        cont=5;
-        cont2=10;
-        while(cont<=(lim*5)){
-            System.out.print(cont+"/"+cont2+", ");
-            cont+=5;
-            cont2+=2;
+        cont = 5;
+        cont2 = 10;
+        while (cont <= (lim * 5)) {
+            System.out.print(cont + "/" + cont2 + ", ");
+            cont += 5;
+            cont2 += 2;
         }
         System.out.println("");
     }
-    
+
 }
 /*run:
 Ingresa el limite: 10

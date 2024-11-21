@@ -10,27 +10,29 @@ Nombre 3	9	$3	$27
 Nombre 4	5	$4	$20
 Nombre 5	12	$2	$24*/
 import java.util.Scanner;
+
 public class Ejercicio3empleados {
+
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
         String nom;
         int dias, cont;
         double costdia, total;
         cont = 1;
-        
-       while(cont<=5){
-           System.out.println("Escribir el nombre del emplado los dias trabajados y el costo por dia: ");
-           nom=tcl.next();
-           dias=tcl.nextInt();
-           costdia=tcl.nextDouble();
-           
-           total=dias*costdia;
-           
-           System.out.printf("|\t%s\t|\t%s\t|\t%s\t|\t%s\t%n", "NOMBRE","DIAS TRABAJDOS","COSTO POR DIA","VALOR A PAGAR");
-           System.out.printf("|\t%s\t|\t%d\t|\t%.2f\t|\t%.2f\t|%n", nom, dias, costdia, total);
-           cont++;
-       } 
-       
+
+        while (cont <= 5) {
+            System.out.println("Escribir el nombre del emplado los dias trabajados y el costo por dia: ");
+            nom = tcl.next();
+            dias = tcl.nextInt();
+            costdia = tcl.nextDouble();
+
+            total = dias * costdia;
+
+            System.out.printf("|\t%s\t|\t%s\t|\t%s\t|\t%s\t%n", "NOMBRE", "DIAS TRABAJDOS", "COSTO POR DIA", "VALOR A PAGAR");
+            System.out.printf("|\t%s\t|\t%d\t|\t%.2f\t|\t%.2f\t|%n", nom, dias, costdia, total);
+            cont++;
+        }
+
     }
 }
 /*

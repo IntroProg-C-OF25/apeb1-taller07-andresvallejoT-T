@@ -43,8 +43,8 @@ public class Ejercicio4jugadoresfutbol {
             System.out.printf("%s-%s-%d-%.2f\n", jugador, posicion, edad, altura);
             cont++;
         }
-        System.out.printf("promedio de edad: %.2f\n",(promed/lim));
-        System.out.printf("Promedio de altura: %.2f\n",(promalt/lim));
+        System.out.printf("promedio de edad: %.2f\n", (promed / lim));
+        System.out.printf("Promedio de altura: %.2f\n", (promalt / lim));
     }
 }
 /*run:
