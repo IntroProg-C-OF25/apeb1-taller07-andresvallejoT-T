@@ -24,16 +24,17 @@ public class problema6_emprezadecomercializacion {
         costo = tcl.nextDouble();
         tipo = tcl.nextInt();
         total = costo;
-        if (tipo == 1) {
-            total = costo - (costo * 0.1);
-
-            System.out.printf("Cliente %s de tipo %s, compra computadora de %.2f\n", name, tipo, total);
-        } else if (tipo == 2) {
-            total = costo - (costo * 0.2);
-            System.out.printf("Cliente %s de tipo %s, compra computadora de %.2f\n", name, tipo, total);
-        } else {
-
-            System.out.printf("Cliente %s de tipo %s, compra computadora de %.2f\n", name, tipo, total);
+        switch (tipo) {
+            case 1 -> {
+                total = costo - (costo * 0.1);
+                System.out.printf("Cliente %s de tipo %s, compra computadora de %.2f\n", name, tipo, total);
+            }
+            case 2 -> {
+                total = costo - (costo * 0.2);
+                System.out.printf("Cliente %s de tipo %s, compra computadora de %.2f\n", name, tipo, total);
+            }
+            default ->
+                System.out.printf("Cliente %s de tipo %s, compra computadora de %.2f\n", name, tipo, total);
         }
     }
 }
